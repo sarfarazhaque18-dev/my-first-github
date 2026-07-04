@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Github</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    button {
+      margin-top: 16px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
-    <h1>Lorem, ipsum.</h1>
-    THis is for the Github repository
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first project uploaded to GitHub.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Hello!</h2>
+      <p>I am learning HTML, CSS, Git, and GitHub.</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 My First Website</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Thanks for visiting my website!";
+    }
+  </script>
 </body>
 </html>
